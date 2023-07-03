@@ -1,5 +1,8 @@
 #include "Player.h"
 
+Player::Player() {
+	players.push_back(false);
+}
 void Player::switch_bool()
 {
 	b = !b;
