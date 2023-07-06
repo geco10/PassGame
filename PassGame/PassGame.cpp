@@ -1,21 +1,12 @@
 #include<SFML/Graphics.hpp>
 #include"Player.h"
+#include"ControlPlayers.h"
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(500, 500), "SFML works!");
-    Player player1;
-    Player player2;
-    int id;
-    Player player3;
-    player2.switch_bool();
-    player1.switch_bool();
-    player3.switch_bool();
-    player1.switch_pos(sf::Vector2f(100, 200));
-    player2.switch_pos(sf::Vector2f(200, 400));
-    player3.switch_pos(sf::Vector2f(350, 200));
-    player1.switch_bool();
-    player3.switch_bool();
-    id = 2;
+    for (int i = 0; i < 21; i++){
+        ControlPlayers player()
+    }
     while (window.isOpen())
     {
         sf::Event event;
