@@ -4,10 +4,11 @@
 #include<SFML/Graphics.hpp>
 class ControlPlayers :public sf::Drawable{
 	std::vector<Player*>players;
-	int count_active_players;
+	int active_players;
 public:
-	ControlPlayers(bool b,sf::Vector2f position);
+	ControlPlayers(int c);
+	~ControlPlayers();
 	void move(sf::Vector2f step);
 	virtual void draw(sf::RenderTarget& target,sf::RenderStates states)const override;
-
+	void nextPlayer();
 };

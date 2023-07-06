@@ -1,7 +1,7 @@
 #include "Player.h"
 
 Player::Player() {
-	players.push_back(false);
+	b = false;
 }
 void Player::switch_bool()
 {
@@ -10,10 +10,8 @@ void Player::switch_bool()
 
 void Player::switch_pos(sf::Vector2f pos)
 {
-	if (b) {
 		this->pos.x += pos.x;
 		this->pos.y += pos.y;
-	}
 }
 
 void Player::draw(sf::RenderTarget& target, sf::RenderStates states)const
